@@ -1,9 +1,9 @@
 {
   "admin_user": "glassadmin",
   "admin_password": "glassadmin",
-  "leases_file": "/var/lib/dhcp/dhcpd.leases",
+  "leases_file": "/opt/docker-dhcpd-composed/data/dhcpd.leases",
   "log_file": "/var/log/dhcp.log",
-  "config_file": "/etc/dhcp/dhcpd.conf",
+  "config_file": "/opt/docker-dhcpd-composed/data/dhcpd.conf",
   "shared_network_critical_threshold": "95",
   "shared_network_warning_threshold": "0",
   "slack_webhook_url": "",

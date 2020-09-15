@@ -4,8 +4,6 @@ RUN apt-get -y update && apt-get -y install --no-install-recommends git && rm -r
 
 WORKDIR /opt
 
-VOLUME ["/opt/glass-isc-dhcp/config/glass_config.json", "/opt/glass-isc-dhcp/logs"]
-
 RUN git clone https://github.com/Akkadius/glass-isc-dhcp && cd glass-isc-dhcp &&\
     mkdir logs && chmod u+x ./bin/ -R && chmod u+x *.sh
 

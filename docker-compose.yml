@@ -13,3 +13,6 @@ services:
     image: lnlscon/glass:v1.0
     ports:
       - '8080:3000'
+    volumes:
+      - '../docker-dhcpd-composed:/opt/docker-dhcpd-composed:ro'
+      - './glass_config.json:/opt/glass-isc-dhcp/config/glass_config.json'
