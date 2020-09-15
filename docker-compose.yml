@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+    glass:
+        build: .
+        image: lnlscon/glass:v1.0
+        ports:
+            - '8080:3000'
