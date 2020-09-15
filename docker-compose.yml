@@ -1,7 +1,15 @@
 version: "3.7"
 services:
-    glass:
-        build: .
-        image: lnlscon/glass:v1.0
-        ports:
-            - '8080:3000'
+  glass:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      labels:
+        - "br.com.lnls-sirius.description=glass-isc-dhcp"
+        - "br.com.lnls-sirius.email=claudio.carneiro@cnpem.br"
+        - "br.com.lnls-sirius.github=carneirofc"
+        - "br.com.lnls-sirius.maintener=Claudio Ferreira Carneiro"
+    build: .
+    image: lnlscon/glass:v1.0
+    ports:
+      - '8080:3000'

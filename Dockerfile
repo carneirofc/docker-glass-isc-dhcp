@@ -1,5 +1,6 @@
 FROM node:12.18.3-buster
-RUN apt-get update && apt-get install git
+
+RUN apt-get -y update && apt-get -y install --no-install-recommends git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt
 
